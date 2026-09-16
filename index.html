@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ананасовый улун - Teaboom</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <meta
+      name="description"
+      content="Ананасовый улун - вкусный и ароматный чай. Закажите прямо сейчас!"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <article class="product-card">
+        <div class="product-card__image-wrapper">
+          <img
+            src="assets/ulun.jpg"
+            alt="Ананасовый улун"
+            class="product-card__image"
+            width="400"
+            height="400"
+          />
+        </div>
+
+        <section class="product-card__info">
+          <header class="product-card__header">
+            <span class="product-card__category">Чай / Улун</span>
+            <h1 class="product-card__title">Ананасовый улун</h1>
+            <span class="product-card__sku" id="product-sku">Арт. 01306</span>
+          </header>
+
+          <p class="product-card__description">
+            Освежающий китайский улун с добавлением кусочков сочного ананаса.
+            Напиток обладает мягким сливочным вкусом с яркими фруктовыми нотками
+            и сладким послевкусием. Идеально подходит для утреннего чаепития.
+          </p>
+
+          <div class="product-card__options">
+            <h3 class="product-card__options-title">Фасовка:</h3>
+            <div
+              class="product-card__pack-sizes"
+              id="pack-sizes"
+              role="radiogroup"
+              aria-label="Выберите фасовку"
+            >
+              <button
+                type="button"
+                class="pack-size-btn active"
+                data-id="0"
+                role="radio"
+                aria-checked="true"
+              >
+                100 г
+              </button>
+              <button
+                type="button"
+                class="pack-size-btn"
+                data-id="1"
+                role="radio"
+                aria-checked="false"
+              >
+                500 г
+              </button>
+              <button
+                type="button"
+                class="pack-size-btn"
+                data-id="2"
+                role="radio"
+                aria-checked="false"
+              >
+                1000 г
+              </button>
+              <button
+                type="button"
+                class="pack-size-btn"
+                data-id="3"
+                role="radio"
+                aria-checked="false"
+              >
+                5000 г
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card__price-section">
+            <div class="product-card__prices">
+              <span
+                class="product-card__price-old"
+                id="product-old-price"
+                aria-label="Старая цена"
+                >349,20 ₽</span
+              >
+              <span
+                class="product-card__price-current"
+                id="product-price"
+                aria-label="Текущая цена"
+                >326,40 ₽</span
+              >
+            </div>
+          </div>
+
+          <div class="product-card__actions">
+            <button
+              type="button"
+              class="btn btn--primary"
+              id="add-to-cart"
+              aria-label="Добавить Ананасовый улун в корзину"
+            >
+              В корзину
+            </button>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
